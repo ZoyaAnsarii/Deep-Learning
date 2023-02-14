@@ -8,7 +8,7 @@ from keras.models import load_model
 st.title('IMDB Sentiment Analysis')
 text = st.text_input('Enter a movie review:')
 
-model = load_model('static\IMDB.h5')
+model = load_model('IMDB/static/IMDB.h5')
 #Define a function to predict the sentiment
 def predict_sentiment(texts):
     texts = [texts]
