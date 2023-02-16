@@ -20,7 +20,7 @@ def predict(image):
     return np.argmax(prediction)
 
 # Draw the canvas for users to draw a digit
-canvas = st_canvas(width=280, height=280, drawing_mode='freedraw', background_color= 'black',stroke_color='white', stroke_width=20 )
+canvas = st_canvas(width=50, height=50, drawing_mode='freedraw', background_color= 'black',stroke_color='white', stroke_width=2 )
  
 # Classify the drawn digit when the user clicks the 'Classify' button
 if st.button('Classify'):
