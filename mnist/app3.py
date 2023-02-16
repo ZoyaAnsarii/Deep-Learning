@@ -8,7 +8,7 @@ import pandas as pd
 
 st.header("AI Application to determine the hand drawn digit")
 st.write("Draw the digit below")
-model = tf.keras.models.load_model('static\mnist.h5')
+model = tf.keras.models.load_model('mnist\static\mnist.h5')
 
 # Define a function to classify the drawn image
 @st.cache_resource #(allow_output_mutation=True)
